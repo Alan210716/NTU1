@@ -6,7 +6,8 @@ from openai import OpenAI
 
 openai_api_key=os.getenv("OPENAI_API_KEY")
 os.environ["REPLICATE_API_TOKEN"]="r8_TYaAnBZRt2GAPOUQZ0yBiHX7bQkTWjU3uTpfa"
-model = OpenAI(api_key=openai_api_key)
+model = OpenAI(api_key="sk-qx4zKKzHnYRc7k8LuXyKHXdQi0gf5BcisgXBVZcXc9t4K8E9",
+               base_url="https://api.chatanywhere.tech/v1")
 
 app = Flask(__name__)
 
